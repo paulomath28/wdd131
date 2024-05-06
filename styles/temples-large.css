@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+/* mobile */
+header {
+	background-color: #bbb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #bbb;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+.active {
+	color: yellow;
+}
+
+/* Larger Views */
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+/* Style for each figure in the gallery */
+.gallery figure {
+    width: calc(33.33% - 10px); 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.gallery img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 200px; 
+}
+
+.gallery figcaption {
+    margin-top: 10px; 
+}
+
+
+.gallery img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%;
+    max-height: 200px; 
+}
+
+@media (max-width: 640px) {
+    .gallery figure {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
