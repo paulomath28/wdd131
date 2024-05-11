@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madagascar</title>
+<style>
+  body { font-family: Arial, sans-serif;
+  background-image: url('images/madagascar2.webp');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+  .header { background-color: red; padding: 10px; text-align: center; }
+  .header h1 { color: white; }
+  .content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+  .box {
+  background-color: rgb(224, 234, 224);
+  padding: 10px;
+  color: rgb(9, 9, 9);
+}
+
+.box {
+  
+  margin: 10px; 
+
+  flex-grow: 1; 
+  flex-shrink: 1; 
+  flex-basis: 15%; 
+  margin: 200px; 
+}
+
+
+.data {
+  order: -1; 
+}
+
+.weather {
+  order: 1; 
+}
+
+
+.data, .weather {
+  position: relative;
+}
+
+.data::before, .weather::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px; 
+  background-color: green; 
+  z-index: 1;
+}
+
+.data h2, .weather h2 {
+  position: relative;
+  z-index: 2;
+  color: white; 
+}
+
+.box.weather {
+  position: relative;
+}
+.box.weather svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer { position: fixed; 
+          bottom: 0; 
+          width: 100%; 
+          background: rgba(0, 0, 0, 0.5); 
+          color: white; 
+          text-align: center; 
+          padding: 5px; 
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Madagascar</h1>
+  </div>
+  <div class="content">
+    <div class="box data">
+      <h2>Data</h2>
+      <p>Area: 587.041 km²</p>
+      <p>Population: 27.691.018</p>
+      <p>Capital: Antananarivo</p>
+      <p>Languages: Malgaxe, Francês</p>
+      <p>Currency: Ariary Malgaxe</p>
+      <p>Time Zone: UTC+3</p>
+      <p>Calling Code: +261</p>
+      <p>Internet TLD: .mg</p>
+    </div>
+    <div class="box weather">
+      <h2>Weather</h2>
+      <p>Temperature: 10°C</p>
+      <p>Conditions: Partly Cloudy</p>
+      <p>Wind: 5 km/h</p>
+      
+    </div>
+  </div>
+  <div class="footer">
+    <p>©2024 ♦ Paulo André Nascimento ♦ Last Modified: 05/10/2024 20:33</p>
+  </div>
+  <script src="scripts/script.js" defer>
+    
+  </script>
+
+</body>
+</html>
